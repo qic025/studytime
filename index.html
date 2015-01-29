@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- Home Page stylesheets -->
+        <link href="css/home-page.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" class="col-centered">
+                <h1>Study Time</h1>
+            </div>
+            <nav role="navigation" class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- List of items that will be displayed -->
+            <div id="navbarCollapse" clas="collapse navbar-collapse">
+                <div class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Today</a></li>
+                    <li class="active"><a href="#">Deadlines</a></li>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active"><a href="#">Login</a></li>
+                        <li class="active"><a href="#">Sign Up</a></li>
+                    <form role="search" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </div>
+                    </form>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+        <div class="row text-center">
+            <h2>Start Studying</h2>
+            <button type="button" id="start-button" class="btn btn-default btn-circle btn-xl">START</button>
+        </div>
+    </body>
+</html>
