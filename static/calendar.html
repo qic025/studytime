@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- Home Page stylesheets -->
+        <link href="css/home-page.css" rel="stylesheet">
+        <link href="css/calendar.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" class="col-centered">
+                <h1>Study Time</h1>
+            </div>
+            <nav role="navigation" class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <form role="search" class="navbar-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </div>
+                    </form>
+                    <li class="active"><button class="btn btn-primary" id="btn-login">Login</button></li>
+                    <li class="active"><button class="btn btn-primary">Sign Up</button></li>
+                </ul>
+                <!-- List of items that will be displayed -->
+                <div id="navbarCollapse" clas="collapse navbar-collapse navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="today.html">Today</a></li>
+                        <li class="active"><a href="deadlines.html">Deadlines</a></li>
+                        <li class="active"><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>
+                <div id="login-form" class="pull-right">
+                    <form method="post" action='' name="login_form">
+                        <p><input type="text" name="email" id="email" placeholder="Email"></p>
+                        <p><input type="password" name="passwd" placeholder="Password"></p>
+                        <p><button type="submit" class="btn btn-primary">Sign in</button>
+                        <a href="#">Forgot Password?</a>
+                        </p>
+                    </form>
+                    </div>
+
+            </div>
+            </nav>
+        </div>
+            <div class="row text-center">
+                <div class="container">
+                    <hr>
+                        <div id="calendar"></div>
+                </div>
+                <!-- <iframe src="https://www.google.com/calendar/embed?src=davidwang1994%40gmail.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
+                <div class="hidden-phone responsive-iframe-container"><iframe src="https://www.google.com/calendar/embed?title=Speaking%20Engagements&height=575&wkst=1&bgcolor=%23FFFFFF&src=dialogconsulting.com_k363h3uf0l9705gt3ufo90oq0g%40group.calendar.google.com&color=%23B1440E&ctz=America%2FNew_York" height="575" width="575" frameborder="0" scrolling="no"></iframe></div> -->
+            </div> 
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/studytime.js"></script>
+        <script src="js/calendar.js"></script>
+    </body>
+</html>
