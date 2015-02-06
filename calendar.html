@@ -9,6 +9,7 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <!-- Home Page stylesheets -->
         <link href="css/home-page.css" rel="stylesheet">
+        <link href="css/calendar.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -56,11 +57,16 @@
             </nav>
         </div>
             <div class="row text-center">
-            <h2>Start Studying</h2>
-            <button type="button" id="start-button" class="btn btn-default btn-circle btn-xl">START</button>
-        </div>
+                <div class="container">
+                    <hr>
+                        <div id="calendar"></div>
+                </div>
+                <!-- <iframe src="https://www.google.com/calendar/embed?src=davidwang1994%40gmail.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
+                <div class="hidden-phone responsive-iframe-container"><iframe src="https://www.google.com/calendar/embed?title=Speaking%20Engagements&height=575&wkst=1&bgcolor=%23FFFFFF&src=dialogconsulting.com_k363h3uf0l9705gt3ufo90oq0g%40group.calendar.google.com&color=%23B1440E&ctz=America%2FNew_York" height="575" width="575" frameborder="0" scrolling="no"></iframe></div> -->
+            </div> 
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/studytime.js"></script>
+        <script src="js/calendar.js"></script>
     </body>
 </html>
