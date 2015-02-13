@@ -64,7 +64,8 @@ p.active {
     }
 
 body {
-    background: url("http://cdn.designbeep.com/wp-content/uploads/2013/04/18.lined-paper-texture.jpg")
+  /*  background: url("https://cdn.designbeep.com/wp-content/uploads/2013/04/18.lined-paper-texture.jpg") */
+	background: url('../lined-paper-texture.jpg')
 }
 
 .row {
@@ -79,4 +80,22 @@ body {
     display:none;
 }
 
+/*
+.container-fluid {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
 
+.row-fluid {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.centering {
+    float: none;
+    margin: 0 auto;
+}
+    */

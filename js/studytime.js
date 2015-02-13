@@ -17,3 +17,4 @@ $('#btn-login').click(function() {
     $('#login-form').fadeIn();
   })
 });
+
