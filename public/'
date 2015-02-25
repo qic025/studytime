@@ -17,40 +17,19 @@ $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.m
   var m = date.getMonth();
   var y = date.getFullYear();
 
-  var calendar = $('#calendar').fullCalendar({
+  $('#calendar').fullCalendar({
+  /*
+    dayClick: function (date, jsEvent, view) {
+      alert('Clicked on: ' + date.format());
+    }
+  */
     header: {
       left: 'prev,next today',
       center: 'title',
       right: 'month,agendaWeek,agendaDay'
     },
-    /* Sets the default view when page is loaded. In this case
-     * the user will say their agenda for the day.
-     */
-    defaultView: 'agendaDay',
-    selectable: true,
-    /* Displays a semi transparent column that shows the user the time slot 
-     * that they clicked on.
-     */
-    selectHelper: true,
-    select: function(start, end, allDay)
-    {
-      var title = prompt('Event Title:');
-      if (title)
-      {
-        calendar.fullCalendar('renderEvent',
-          {
-            title: title,
-            start: start,
-            end: end,
-            allDay: allDay
-          },
-          true // make the event "stick"
-        );
-      }
-      calendar.fullCalendar('unselect');
-    },
     editable: true,
-    url: 'https://www.google.com/calendar/embed?src=ninjaskater365%40gmail.com&ctz=America/Los_Angeles',
+    url: https:'//www.google.com/calendar/embed?src=ninjaskater365%40gmail.com&ctz=America/Los_Angeles"
     events: [
       {
         title: 'Cram for Final',
