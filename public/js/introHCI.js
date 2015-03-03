@@ -9,6 +9,16 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+
+     $(".version_a").click(function(){
+    woopra.track("a_version_click");
+  })
+
+  $(".version_b").click(function(){
+    woopra.track("b_version_click");
+  })
+
+
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
         $('.btn-lg').text("Clicked!");
