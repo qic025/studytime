@@ -13,18 +13,7 @@ verticalCenterStuff();
 */
 
 $(document).ready(function(){
-  initializePage();
-});
-
-$('#btn-login').click(function() {
-  $(this).parent().fadeOut(function() {
-    $('#login-form').fadeIn();
-  })
-});
-
-function initializePage() {
-
-     $(".version_a").click(function(){
+    $(".version_a").click(function(event){
       console.log("A clicked");
     woopra.track("a_version_click");
   });
@@ -33,4 +22,10 @@ function initializePage() {
     console.log("B clicked");
     woopra.track("b_version_click");
   });
-}
+});
+
+$('#btn-login').click(function() {
+  $(this).parent().fadeOut(function() {
+    $('#login-form').fadeIn();
+  })
+});
